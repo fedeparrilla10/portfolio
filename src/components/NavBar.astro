@@ -1,0 +1,41 @@
+---
+const menuItems = [
+  {
+    name: 'Home',
+    link: '#home',
+  },
+  {
+    name: 'About',
+    link: '#about',
+  },
+  {
+    name: 'Projects',
+    link: '#projects',
+  },
+  {
+    name: 'Contact',
+    link: '#contact',
+  },
+];
+---
+
+<section class="pt-2">
+  <nav class="flex items-center justify-center">
+    <!-- <div>
+      <h3 class="font-mono">FP ~</h3>
+    </div> -->
+
+    <ul class="flex flex-row items-center justify-center gap-12">
+      {
+        menuItems.map((item) => {
+          return (
+            <li>
+              <a href={item.link}>{item.name}</a>
+            </li>
+          );
+        })
+      }
+      <!-- <button>Download CV</button> -->
+    </ul>
+  </nav>
+</section>
