@@ -4,7 +4,7 @@ export const allProjects = [
     img: '/portfolio/projects/RecoFM.png',
     description:
       'Responsive SPA developed with React. Animations powered by the Framer Motion library. BEM methodology for proper and organised styling. Random data block generator. Routing implemented using React Router DOM.',
-    tech: ['/portfolio/icons/react.svg', '/icons/css3.svg'],
+    tech: ['/portfolio/icons/react.svg', '/portfolio/icons/css3.svg'],
   },
   {
     name: 'BookFinder',
