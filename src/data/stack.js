@@ -1,50 +1,50 @@
 export const allTechs = [
   {
     name: 'HTML5',
-    img: '../../public/icons/html5.svg',
+    img: 'portfolio/icons/html5.svg',
   },
   {
     name: 'CSS3',
-    img: '../../public/icons/css3.svg',
+    img: 'portfolio/icons/css3.svg',
   },
   {
     name: 'SASS',
-    img: '../../public/icons/sass.svg',
+    img: 'portfolio/icons/sass.svg',
   },
   {
     name: 'JavaScript',
-    img: '../../public/icons/javascript.svg',
+    img: 'portfolio/icons/javascript.svg',
   },
   {
     name: 'TypeScript',
-    img: '../../public/icons/typescript.svg',
+    img: 'portfolio/icons/typescript.svg',
   },
   {
     name: 'React',
-    img: '../../public/icons/react.svg',
+    img: 'portfolio/icons/react.svg',
   },
   {
     name: 'NextJS',
-    img: '../../public/icons/nextjs.svg',
+    img: 'portfolio/icons/nextjs.svg',
   },
   {
     name: 'Angular',
-    img: '../../public/icons/angular.svg',
+    img: 'portfolio/icons/angular.svg',
   },
   {
     name: 'PHP',
-    img: '../../public/icons/php.svg',
+    img: 'portfolio/icons/php.svg',
   },
   {
     name: 'Laravel',
-    img: '../../public/icons/laravel.svg',
+    img: 'portfolio/icons/laravel.svg',
   },
   {
     name: 'MUI',
-    img: '../../public/icons/mui.svg',
+    img: 'portfolio/icons/mui.svg',
   },
   {
     name: 'TailwindCSS',
-    img: '../../public/icons/tailwind.svg',
+    img: 'portfolio/icons/tailwind.svg',
   },
 ];
