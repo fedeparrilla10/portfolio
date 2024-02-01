@@ -6,22 +6,6 @@ import { allTechs } from '../data/stack.js';
   class="pt-10 mb-10 flex flex-col items-center justify-center gap-20"
   id="about"
 >
-  <h2
-    class="font-mono text-2xl md:text-3xl tracking-wide text-cyan-200 uppercase"
-  >
-    | About Me 🧔🏻
-  </h2>
-
-  <div class="flex flex-col justify-center items-center lg:flex-row gap-10">
-    <p>
-      I'm a developer who embarked on their journey in October 2022 as a
-      self-taught enthusiast. I later expanded my knowledge by completing a
-      bootcamp at UpgradeHub, with a specific focus on front-end development.
-      Dedication and enthusiasm have been with me from the beginning, and I view
-      them as my core foundations.
-    </p>
-  </div>
-
   <div class="flex flex-row flex-wrap items-center justify-center gap-4">
     {
       allTechs.map((tech) => {
@@ -46,10 +30,30 @@ import { allTechs } from '../data/stack.js';
       <h3 class="text-lg font-semibold text-white">
         Full-Stack Developer in Sitelicon Ecommerce Services
       </h3>
-      <p class="mb-4 text-base font-normal text-gray-400">
-        Get access to over 20+ pages including a dashboard layout, charts,
-        kanban board, calendar, and pre-order E-commerce & Marketing pages.
-      </p>
+      <ul
+        class="mb-4 text-base font-normal text-gray-300 list-disc flex flex-col gap-2"
+      >
+        <li>
+          Developed frontend solutions using various frameworks and
+          technologies, such as React, NextJS or Astro, implementing interactive
+          components to improve user experiences.
+        </li>
+        <li>
+          Designed and crafted multiple landing pages for Nacon, a renowned mark
+          in the entertainment industry, ensuring timely delivery and efficient
+          development by creating a custom template.
+        </li>
+        <li>
+          Led the development of distinct sections for PACOMARTÍNEZ, a prominent
+          travel-related products retailer. Played a key role in creating both
+          intuitive admin panels and user interfaces.
+        </li>
+        <li>
+          Collaborated in the creation of robust RESTful APIs using Laravel
+          (PHP). Actively contributed to the development process by creating
+          endpoints and managing data effectively.
+        </li>
+      </ul>
     </li>
     <li class="mb-10 ml-4">
       <div
