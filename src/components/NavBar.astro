@@ -5,10 +5,6 @@ const menuItems = [
     link: '#home',
   },
   {
-    name: 'About',
-    link: '#about',
-  },
-  {
     name: 'Projects',
     link: '#projects',
   },
@@ -17,10 +13,25 @@ const menuItems = [
     link: '#contact',
   },
 ];
+
+const languages = [
+  {
+    id: 1,
+    name: 'Español',
+    src: '/portfolio/spa.svg',
+  },
+  {
+    id: 2,
+    name: 'English',
+    src: '/portfolio/eng.svg',
+  },
+];
 ---
 
 <section class="pt-2">
-  <nav class="flex items-center justify-between">
+  <nav
+    class="flex items-center justify-center md:justify-around xl:justify-between"
+  >
     <img src="/portfolio/fplogo.png" class="h-6 w-6 object-contain" />
     <ul
       class="flex flex-row items-center justify-center gap-8 md:gap-6 text-[1rem] font-mono uppercase text-cyan-100"
@@ -34,6 +45,21 @@ const menuItems = [
           );
         })
       }
+      <div class="flex flex-row xl:pl-10 gap-3">
+        {
+          languages.map((language) => {
+            return (
+              <li>
+                <img
+                  src={language.src}
+                  alt={language.name}
+                  class="h-6 w-6 object-contain"
+                />
+              </li>
+            );
+          })
+        }
+      </div>
     </ul>
   </nav>
 </section>

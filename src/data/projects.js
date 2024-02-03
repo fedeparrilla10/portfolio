@@ -1,5 +1,6 @@
 export const allProjects = [
   {
+    id: 1,
     name: 'RecoFM',
     img: '/portfolio/projects/RecoFM.png',
     description:
@@ -7,6 +8,7 @@ export const allProjects = [
     tech: ['/portfolio/icons/react.svg', '/portfolio/icons/css3.svg'],
   },
   {
+    id: 2,
     name: 'BookFinder',
     img: '/portfolio/projects/bookfinder.png',
     description:
@@ -14,6 +16,7 @@ export const allProjects = [
     tech: ['/portfolio/icons/react.svg', '/portfolio/icons/css3.svg'],
   },
   {
+    id: 3,
     name: 'DestinosAR',
     img: '/portfolio/projects/DestinosAR.png',
     description:

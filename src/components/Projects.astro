@@ -2,11 +2,52 @@
 import { allProjects } from '../data/projects.js';
 ---
 
-<section
-  class="pt-8 mb-14 flex flex-col items-center justify-center gap-20"
-  id="projects"
->
+<!-- <section class="pt-5 mb-10 flex flex-col gap-16" id="projects">
   <h2 class="font-mono text-2xl text-cyan-200">🚀 Projects</h2>
+
+  <div class="flex justify-between flex-col gap-20">
+    {
+      allProjects.map((project) => (
+        <>
+          <div class="wrapper flex flex-row items-center justify-around">
+            <div
+              class={
+                project.id % 2 === 0
+                  ? 'order-2 max-w-sm shadow image'
+                  : 'max-w-sm shadow image'
+              }
+            >
+              <a href="#">
+                <img class="rounded-xl" src={project.img} alt={project.name} />
+                <div class="content rounded-xl">
+                  <h3 class="text-2xl font-semibold">{project.name}</h3>
+                  <div class="flex flex-row gap-5">
+                    {project.tech.map((tech) => (
+                      <img class="w-10" src={tech} alt="Technologies" />
+                    ))}
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class={project.id % 2 === 0 && 'order-1'}>
+              <ul class="list-disc">
+                <li>Developed with React</li>
+                <li>Developed with React</li>
+                <li>Developed with React</li>
+                <li>Developed with React</li>
+                <li>Developed with React</li>
+              </ul>
+            </div>
+          </div>
+        </>
+      ))
+    }
+  </div>
+</section> -->
+<section class="pt-5 mb-10 flex flex-col gap-16" id="projects">
+  <h2 class="font-mono text-2xl text-cyan-200 text-center lg:text-start">
+    🚀 Projects
+  </h2>
 
   <div class="grid lg:grid-cols-3 gap-5 justify-center">
     {
