@@ -1,20 +1,27 @@
 ---
+import { languages } from '../i18n/ui';
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { LanguageSelector } from "astro-i18next/components";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
 const menuItems = [
   {
-    name: 'Home',
+    name: t('nav.home'),
     link: '#home',
   },
   {
-    name: 'Projects',
+    name: t('nav.projects'),
     link: '#projects',
   },
   {
-    name: 'Contact',
+    name: t('nav.contact'),
     link: '#contact',
   },
 ];
 
-const languages = [
+const flags = [
   {
     id: 1,
     name: 'Español',
@@ -47,17 +54,20 @@ const languages = [
       }
       <div class="flex flex-row xl:pl-10 gap-3">
         {
-          languages.map((language) => {
-            return (
-              <li>
+          Object.entries(languages).map(([lang, label]) => (
+            <li>
+              <a href={`/portfolio/${lang}`}>
                 <img
-                  src={language.src}
-                  alt={language.name}
-                  class="h-6 w-6 object-contain"
+                  src={flags.find(
+                    (flag) => flag.name.toLowerCase() === label.toLowerCase()
+                  ).src}
+                  )
+                  alt={lang}
+                  class="h-8 w-6 object-contain"
                 />
-              </li>
-            );
-          })
+              </a>
+            </li>
+          ))
         }
       </div>
     </ul>

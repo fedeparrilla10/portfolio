@@ -1,5 +1,9 @@
 ---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
 import { allTechs } from '../data/stack.js';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <section class="pt-5 mb-10 flex flex-col gap-16" id="work-experience">
@@ -16,7 +20,7 @@ import { allTechs } from '../data/stack.js';
   </div>
 
   <h2 class="font-mono text-2xl text-cyan-200 text-center lg:text-start">
-    🚀 Work Experience
+    🚀 {t('work.title')}
   </h2>
 
   <div>
@@ -27,33 +31,25 @@ import { allTechs } from '../data/stack.js';
         >
         </div>
         <time class="mb-1 text-sm font-normal leading-none text-gray-500"
-          >August 2023 - Present
+          >{t('work.date')}
         </time>
         <h3 class="text-lg font-semibold text-white">
-          Full-Stack Developer in Sitelicon Ecommerce Services
+          {t('work.work')}
         </h3>
         <ul
           class="mb-4 text-base font-normal text-gray-300 list-disc flex flex-col gap-2"
         >
           <li>
-            Developed frontend solutions using various frameworks and
-            technologies, such as React, NextJS or Astro, implementing
-            interactive components to improve user experiences.
+            {t('work.functions.first')}
           </li>
           <li>
-            Designed and crafted multiple landing pages for Nacon, a renowned
-            mark in the entertainment industry, ensuring timely delivery and
-            efficient development by creating a custom template.
+            {t('work.functions.second')}
           </li>
           <li>
-            Led the development of distinct sections for PACOMARTÍNEZ, a
-            prominent travel-related products retailer. Played a key role in
-            creating both intuitive admin panels and user interfaces.
+            {t('work.functions.third')}
           </li>
           <li>
-            Collaborated in the creation of robust RESTful APIs using Laravel
-            (PHP). Actively contributed to the development process by creating
-            endpoints and managing data effectively.
+            {t('work.functions.fourth')}
           </li>
         </ul>
       </li>
@@ -63,14 +59,13 @@ import { allTechs } from '../data/stack.js';
         >
         </div>
         <time class="mb-1 text-sm font-normal leading-none text-gray-500"
-          >March 2023 - July 2023</time
+          >{t('study.date')}</time
         >
         <h3 class="text-lg font-semibold text-white">
-          Front-End Development Bootcamp in UpgradeHub
+          {t('study.title')}
         </h3>
         <p class="mb-4 text-base font-normal text-gray-400">
-          Get access to over 20+ pages including a dashboard layout, charts,
-          kanban board, calendar, and pre-order E-commerce & Marketing pages.
+          {t('study.description')}
         </p>
       </li>
     </ol>
