@@ -6,5 +6,5 @@ export default defineConfig({
   integrations: [tailwind()],
   site: 'https://fedeparrilla10.github.io',
   base: '/portfolio',
-  trailingSlash: 'never',
+  trailingSlash: never,
 });
