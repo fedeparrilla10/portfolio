@@ -5,7 +5,7 @@ import tailwind from '@astrojs/tailwind';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://fedeparrilla10.github.io',
-  base: 'portfolio',
+  base: '/portfolio',
   trailingSlash: 'never',
   integrations: [tailwind(), astroI18next()],
 });
