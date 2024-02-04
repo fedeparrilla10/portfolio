@@ -8,4 +8,8 @@ export default defineConfig({
   base: '/portfolio',
   trailingSlash: 'never',
   integrations: [tailwind(), astroI18next()],
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'es'],
+  },
 });
