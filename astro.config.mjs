@@ -6,5 +6,6 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
   site: 'https://fedeparrilla10.github.io',
   base: '/portfolio',
+  trailingSlash: 'never',
   integrations: [tailwind(), astroI18next()],
 });
