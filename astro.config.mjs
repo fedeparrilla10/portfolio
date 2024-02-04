@@ -7,4 +7,7 @@ export default defineConfig({
   site: 'https://fedeparrilla10.github.io',
   base: '/portfolio',
   trailingSlash: 'never',
+  build: {
+    format: 'file',
+  },
 });
