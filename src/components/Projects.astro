@@ -11,22 +11,41 @@ const t = useTranslations(lang);
     🚀 {t('projects.title')}
   </h2>
 
-  <div class="grid lg:grid-cols-3 gap-5 justify-center">
+  <div class="flex gap-24 flex-col justify-center">
     {
       allProjects.map((project) => (
         <div class="wrapper">
-          <div class="max-w-sm shadow image">
-            <a href="#">
-              <img class="rounded-xl" src={project.img} alt={project.name} />
-              <div class="content rounded-xl">
-                <h3 class="text-2xl font-semibold">{project.name}</h3>
-                <div class="flex flex-row gap-5">
-                  {project.tech.map((tech) => (
-                    <img class="w-10" src={tech} alt="Technologies" />
-                  ))}
-                </div>
+          <div class="flex flex-col lg:flex-row gap-4 lg:gap-10">
+            <img
+              class="rounded-xl lg:w-2/5 lg:h-64 lg:object-cover lg:object-top"
+              src={project.img}
+              alt={project.name}
+            />
+            <div class="flex flex-col gap-6 justify-around">
+              <h3 class="text-3xl font-bold text-gray-200">{project.name}</h3>
+              <div class="flex flex-row gap-2">
+                {project.tech.map((tech) => {
+                  return <img src={tech} class="w-6" />;
+                })}
               </div>
-            </a>
+              <p class="text-gray-300">{project.description}</p>
+              <div class="flex flex-row gap-4 text-[1rem]">
+                <a
+                  href="#"
+                  class="flex flex-row items-center gap-2 rounded-xl px-3 py-2 bg-slate-900"
+                >
+                  <i class="fa-solid fa-link" />
+                  <p class="">Preview</p>
+                </a>
+                <a
+                  href="#"
+                  class="flex flex-row items-center gap-2 rounded-xl px-3 bg-slate-900"
+                >
+                  <i class="fa-brands fa-github" />
+                  <p class="pb-1">Code</p>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       ))
