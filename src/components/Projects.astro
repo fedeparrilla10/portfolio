@@ -22,24 +22,33 @@ const t = useTranslations(lang);
               alt={project.name}
             />
             <div class="flex flex-col gap-6 justify-around">
-              <h3 class="text-3xl font-bold text-gray-200">{project.name}</h3>
-              <div class="flex flex-row gap-2">
-                {project.tech.map((tech) => {
-                  return <img src={tech} class="w-6" />;
-                })}
+              <div class="flex flex-col gap-3">
+                <h3 class="text-2xl font-bold text-gray-200">{project.name}</h3>
+                <div class="flex flex-row gap-2">
+                  {project.tech.map((tech) => {
+                    return (
+                      <div
+                        class={`${tech.class} flex flex-row text-sm items-center gap-1 border-gray-200 rounded-lg px-3 py-[0.20rem] cursor-default`}
+                      >
+                        <img src={tech.img} class="w-5" />
+                        <p>{tech.name}</p>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
-              <p class="text-gray-300">{project.description}</p>
+              <p class="text-gray-300 text-[1rem]">{project.description}</p>
               <div class="flex flex-row gap-4 text-[1rem]">
                 <a
                   href="#"
-                  class="flex flex-row items-center gap-2 rounded-xl px-3 py-2 bg-slate-900"
+                  class="flex flex-row items-center gap-2 rounded-xl px-3 py-2 bg-slate-900 hover:bg-slate-800"
                 >
                   <i class="fa-solid fa-link" />
                   <p class="">Preview</p>
                 </a>
                 <a
                   href="#"
-                  class="flex flex-row items-center gap-2 rounded-xl px-3 bg-slate-900"
+                  class="flex flex-row items-center gap-2 rounded-xl px-3 bg-slate-900 hover:bg-slate-800"
                 >
                   <i class="fa-brands fa-github" />
                   <p class="pb-1">Code</p>
