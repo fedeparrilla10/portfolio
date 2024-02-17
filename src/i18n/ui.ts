@@ -8,6 +8,7 @@ export const defaultLang = 'en';
 export const ui = {
   en: {
     'nav.home': 'Home',
+    'nav.work': 'Work Experience',
     'nav.projects': 'Projects',
     'nav.contact': 'Contact',
 
@@ -30,17 +31,20 @@ export const ui = {
 
     'projects.title': 'Projects',
 
+    'skills.title': 'Skills',
+
     'contact.title': 'Contact',
     'contact.email': 'Email',
     'contact.subject': 'Subject',
     'contact.message': 'Message',
     'contact.submit': 'Send message',
     'contact.placeholder.email': 'name@something.com',
-    'contact.placeholder.subject': 'Subject',
-    'contact.placeholder.message': 'Write your message here',
+    'contact.placeholder.subject': 'Subject of your message',
+    'contact.placeholder.message': 'Write your message here...',
   },
   es: {
     'nav.home': 'Home',
+    'nav.work': 'Experiencia Laboral',
     'nav.projects': 'Proyectos',
     'nav.contact': 'Contacto',
 
@@ -63,13 +67,15 @@ export const ui = {
 
     'projects.title': 'Proyectos',
 
+    'skills.title': 'Skills',
+
     'contact.title': 'Contacto',
     'contact.email': 'Email',
     'contact.subject': 'Asunto',
     'contact.message': 'Mensaje',
     'contact.submit': 'Enviar mensaje',
     'contact.placeholder.email': 'nombre@algo.com',
-    'contact.placeholder.subject': 'Asunto',
-    'contact.placeholder.message': 'Escribe tu mensaje aquí',
+    'contact.placeholder.subject': 'Asunto de tu mensaje',
+    'contact.placeholder.message': 'Escribe tu mensaje aquí...',
   },
 } as const;
