@@ -19,6 +19,8 @@ export const allProjects = [
         class: 'bg-blue-800 text-gray-100',
       },
     ],
+    preview: 'https://fedeparrilla10.github.io/recofm/',
+    code: 'https://github.com/fedeparrilla10/recofm',
   },
   {
     id: 2,
@@ -40,6 +42,8 @@ export const allProjects = [
         class: 'bg-blue-800 text-gray-100',
       },
     ],
+    preview: 'https://fedeparrilla10.github.io/bookfinder/',
+    code: 'https://github.com/fedeparrilla10/bookfinder',
   },
   {
     id: 3,
@@ -61,5 +65,7 @@ export const allProjects = [
         class: 'bg-blue-800 text-gray-100',
       },
     ],
+    preview: 'https://fedeparrilla10.github.io/destinosar/',
+    code: 'https://github.com/fedeparrilla10/destinosar',
   },
 ];

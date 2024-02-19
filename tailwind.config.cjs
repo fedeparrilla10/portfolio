@@ -6,6 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      main: ['Open Sans', 'sans-serif'],
+      mono: ['Roboto Mono', 'monospace'],
+    },
   },
   plugins: [require('flowbite/plugin')],
 };

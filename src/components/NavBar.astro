@@ -39,32 +39,36 @@ const flags = [
 ---
 
 <section class="pt-2">
-  <nav
-    class="flex items-center justify-center md:justify-around xl:justify-between"
-  >
-    <img src="/portfolio/fplogo.png" class="h-6 w-6 object-contain" />
-    <ul
-      class="flex flex-row items-center justify-center gap-8 md:gap-6 text-[1rem] font-mono uppercase text-cyan-100"
-    >
-      {
-        menuItems.map((item) => {
-          return (
+  <nav class="flex items-center justify-between">
+    <img
+      src="/portfolio/fplogo.png"
+      class="h-6 w-6 object-contain"
+      alt="FedeParrilla Logo"
+    />
+    <div class="flex flex-row gap-8">
+      <ul
+        class="hidden md:flex flex-row items-center justify-center gap-8 md:gap-5 text-[1rem] font-mono uppercase text-cyan-100"
+      >
+        {
+          menuItems.map((item) => (
             <li>
               <a href={item.link}>{item.name}</a>
             </li>
-          );
-        })
-      }
-      <div class="flex flex-row xl:pl-10 gap-3">
+          ))
+        }
+      </ul>
+
+      <ul class="flex flex-row items-center justify-center gap-3">
         {
           Object.entries(languages).map(([lang, label]) => (
             <li>
               <a href={`/portfolio/${lang}`}>
                 <img
-                  src={flags.find(
-                    (flag) => flag.name.toLowerCase() === label.toLowerCase()
-                  ).src}
-                  )
+                  src={
+                    flags.find(
+                      (flag) => flag.name.toLowerCase() === label.toLowerCase()
+                    ).src
+                  }
                   alt={lang}
                   class="h-8 w-6 object-contain"
                 />
@@ -72,7 +76,7 @@ const flags = [
             </li>
           ))
         }
-      </div>
-    </ul>
+      </ul>
+    </div>
   </nav>
 </section>

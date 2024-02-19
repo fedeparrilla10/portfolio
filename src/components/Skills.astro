@@ -7,7 +7,9 @@ const t = useTranslations(lang);
 ---
 
 <section class="pt-10 mb-10 flex flex-col gap-12" id="skills">
-  <h2 class="font-mono text-2xl text-cyan-200 text-center lg:text-start">
+  <h2
+    class="font-mono font-semibold text-xl text-cyan-200 text-center lg:text-start"
+  >
     ⚒️ {t('skills.title')}
   </h2>
 
@@ -18,7 +20,7 @@ const t = useTranslations(lang);
           <div
             class={`${tech.class} flex flex-row text-sm items-center gap-1 border-gray-200 rounded-lg px-3 py-[0.20rem] cursor-default`}
           >
-            <img src={tech.img} class="w-5" />
+            <img src={tech.img} class="w-5" alt={tech.name} />
             <p>{tech.name}</p>
           </div>
         );
