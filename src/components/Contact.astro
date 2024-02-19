@@ -3,76 +3,46 @@ import { getLangFromUrl, useTranslations } from '../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+
+const rrss = [
+  {
+    name: 'GitHub',
+    icon: 'fa-brands fa-github text-[2.5rem]',
+    link: 'https://github.com/fedeparrilla10',
+  },
+  {
+    name: 'LinkedIn',
+    icon: 'fa-brands fa-linkedin text-[2.5rem]',
+    link: 'https://www.linkedin.com/in/fedeparrilla/',
+  },
+  {
+    name: 'Email',
+    icon: 'fa-solid fa-envelope text-[2.5rem]',
+    link: 'mailto:fedeparrilla.dev@gmail.com',
+  },
+];
 ---
 
-<section class="pt-10 mb-10 flex flex-col" id="contact">
+<section class="pt-10 mb-10 flex flex-col gap-12" id="contact">
   <h2 class="font-mono text-2xl text-cyan-200 text-center lg:text-start">
     💬 {t('contact.title')}
   </h2>
-  <section class="flex justify-between items-center gap-20">
-    <div class="py-8 lg:py-16 px-4 w-1/2">
-      <form action="#" class="space-y-8">
-        <div>
-          <label
-            for="email"
-            class="block mb-2 text-sm font-medium text-gray-300"
-            >{t('contact.email')}</label
-          >
-          <input
-            type="email"
-            id="email"
-            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
-            placeholder={t('contact.placeholder.email')}
-            required
-          />
-        </div>
-        <div>
-          <label
-            for="subject"
-            class="block mb-2 text-sm font-medium text-gray-300"
-            >{t('contact.subject')}</label
-          >
-          <input
-            type="text"
-            id="subject"
-            class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500"
-            placeholder={t('contact.placeholder.subject')}
-            required
-          />
-        </div>
-        <div class="sm:col-span-2">
-          <label
-            for="message"
-            class="block mb-2 text-sm font-medium text-gray-300"
-            >{t('contact.message')}</label
-          >
-          <textarea
-            id="message"
-            rows="6"
-            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500"
-            placeholder={t('contact.placeholder.message')}></textarea>
-        </div>
-        <button
-          type="submit"
-          class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-slate-900"
-          >{t('contact.submit')}</button
-        >
-      </form>
-    </div>
-
+  <section class="flex justify-center lg:justify-start items-center gap-10">
     <div
-      class="flex flex-row w-12 gap-4 items-center justify-center lg:items-start lg:justify-start lg:flex-col"
+      class="flex flex-row gap-10 items-center justify-center lg:items-start lg:justify-start"
     >
-      <i class="fa-brands fa-github text-[2.7rem]"></i>
-      <i class="fa-brands fa-linkedin text-[2.7rem]"></i>
-      <i class="fa-regular fa-file text-[2.7rem]"></i>
-    </div>
-
-    <div>
-      <img
-        src="/portfolio/codinganim.png"
-        class="w-48 hidden xl:block rounded-3xl shadow-lg"
-      />
+      {
+        rrss.map((rrss) => {
+          return (
+            <a href={rrss.link} target="_blank">
+              <div class="flex flex-row items-center gap-2 text-[1rem]">
+                <i class={rrss.icon} />
+                <p>{rrss.name}</p>
+              </div>
+            </a>
+          );
+        })
+      }
     </div>
   </section>
 </section>

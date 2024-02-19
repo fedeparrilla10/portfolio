@@ -4,9 +4,20 @@ import { allProjects } from '../data/projects.js';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+
+const linkButtons = [
+  {
+    name: 'Preview',
+    icon: 'fa-solid fa-link',
+  },
+  {
+    name: 'Code',
+    icon: 'fa-brands fa-github',
+  },
+];
 ---
 
-<section class="pt-5 mb-10 flex flex-col gap-16" id="projects">
+<section class="pt-10 mb-10 flex flex-col gap-12" id="projects">
   <h2 class="font-mono text-2xl text-cyan-200 text-center lg:text-start">
     🚀 {t('projects.title')}
   </h2>
@@ -14,46 +25,43 @@ const t = useTranslations(lang);
   <div class="flex gap-24 flex-col justify-center">
     {
       allProjects.map((project) => (
-        <div class="wrapper">
-          <div class="flex flex-col lg:flex-row gap-4 lg:gap-10">
-            <img
-              class="rounded-xl lg:w-2/5 lg:h-64 lg:object-cover lg:object-top"
-              src={project.img}
-              alt={project.name}
-            />
-            <div class="flex flex-col gap-6 justify-around">
-              <div class="flex flex-col gap-3">
-                <h3 class="text-2xl font-bold text-gray-200">{project.name}</h3>
-                <div class="flex flex-row gap-2">
-                  {project.tech.map((tech) => {
-                    return (
-                      <div
-                        class={`${tech.class} flex flex-row text-sm items-center gap-1 border-gray-200 rounded-lg px-3 py-[0.20rem] cursor-default`}
-                      >
-                        <img src={tech.img} class="w-5" />
-                        <p>{tech.name}</p>
-                      </div>
-                    );
-                  })}
-                </div>
+        <div class="flex flex-col lg:flex-row gap-4 lg:gap-10">
+          <img
+            class="rounded-xl lg:w-2/5 lg:h-64 lg:object-cover lg:object-top"
+            src={project.img}
+            alt={project.name}
+          />
+          <div class="flex flex-col gap-6 justify-around">
+            <div class="flex flex-col gap-3 items-center lg:items-start">
+              <h3 class="text-2xl font-bold text-gray-200">{project.name}</h3>
+              <div class="flex flex-row gap-2 justify-center lg:justify-start">
+                {project.tech.map((tech) => {
+                  return (
+                    <div
+                      class={`${tech.class} flex flex-row text-sm items-center gap-1 border-gray-200 rounded-lg px-3 py-[0.20rem] cursor-default`}
+                    >
+                      <img src={tech.img} class="w-5" />
+                      <p>{tech.name}</p>
+                    </div>
+                  );
+                })}
               </div>
-              <p class="text-gray-300 text-[1rem]">{project.description}</p>
-              <div class="flex flex-row gap-4 text-[1rem]">
-                <a
-                  href="#"
-                  class="flex flex-row items-center gap-2 rounded-xl px-3 py-2 bg-slate-900 hover:bg-slate-800"
-                >
-                  <i class="fa-solid fa-link" />
-                  <p class="">Preview</p>
-                </a>
-                <a
-                  href="#"
-                  class="flex flex-row items-center gap-2 rounded-xl px-3 bg-slate-900 hover:bg-slate-800"
-                >
-                  <i class="fa-brands fa-github" />
-                  <p class="pb-1">Code</p>
-                </a>
-              </div>
+            </div>
+            <p class="text-gray-300 text-[1rem] text-center lg:text-start">
+              {project.description}
+            </p>
+            <div class="flex flex-row gap-3 text-[1rem] justify-center lg:justify-start">
+              {linkButtons.map((button) => {
+                return (
+                  <a
+                    href="#"
+                    class="flex flex-row items-center gap-2 rounded-xl px-3 py-2 bg-slate-900 hover:bg-slate-800"
+                  >
+                    <i class={button.icon} />
+                    <p class="">{button.name}</p>
+                  </a>
+                );
+              })}
             </div>
           </div>
         </div>
@@ -61,36 +69,3 @@ const t = useTranslations(lang);
     }
   </div>
 </section>
-
-<style>
-  .image {
-    position: relative;
-  }
-
-  .content {
-    position: absolute;
-    background: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
-    transition: 0.6s;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0;
-  }
-
-  .content:hover {
-    opacity: 1;
-  }
-
-  @media (max-width: 1280px) {
-    .content {
-      opacity: 0.9;
-    }
-  }
-</style>
