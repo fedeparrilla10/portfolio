@@ -10,6 +10,7 @@ export const ui = {
     'nav.home': 'Home',
     'nav.work': 'Work Experience',
     'nav.projects': 'Projects',
+    'nav.skills': 'Skills',
     'nav.contact': 'Contact',
 
     'hero.hello': "Hello!👋🏻 I'm ",
@@ -46,6 +47,7 @@ export const ui = {
     'nav.home': 'Home',
     'nav.work': 'Experiencia Laboral',
     'nav.projects': 'Proyectos',
+    'nav.skills': 'Skills',
     'nav.contact': 'Contacto',
 
     'hero.hello': '¡Hola!👋🏻 Soy ',
