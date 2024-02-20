@@ -12,10 +12,12 @@ export const ui = {
     'nav.projects': 'Projects',
     'nav.skills': 'Skills',
     'nav.contact': 'Contact',
+    'nav.cv': 'Download CV',
 
     'hero.hello': "Hello!👋🏻 I'm ",
     'hero.job': 'a Software Developer',
-    'hero.bio': `I'm a developer who embarked on their journey in October 2022 as a self-taught enthusiast. I later expanded my knowledge by completing a bootcamp at UpgradeHub, with a specific focus on front-end development. Dedication and enthusiasm have been with me from the beginning, and I view them as my core foundations.`,
+    'hero.bio':
+      '+1 year of experience. At the end of 2022, deep inside the Finnish winter, I began this challenging yet beautiful journey, building tiny applications with HTML, CSS, and JavaScript. By the peak of the summer solstice, I completed a frontend development-focused bootcamp, and after a few weeks, I started my first professional experience.',
 
     'work.title': 'Work Experience',
     'work.work': 'Full-Stack Developer in Sitelicon Ecommerce Services',
@@ -45,14 +47,16 @@ export const ui = {
   },
   es: {
     'nav.home': 'Home',
-    'nav.work': 'Experiencia Laboral',
+    'nav.work': 'Experiencia',
     'nav.projects': 'Proyectos',
     'nav.skills': 'Skills',
     'nav.contact': 'Contacto',
+    'nav.cv': 'Descargar CV',
 
     'hero.hello': '¡Hola!👋🏻 Soy ',
     'hero.job': 'un Desarrollador de Software',
-    'hero.bio': `Soy un desarrollador que inició su viaje en octubre de 2022 como entusiasta autodidacta. Más tarde, amplié mis conocimientos al completar un bootcamp en UpgradeHub, con un enfoque específico en desarrollo front-end. La dedicación y el entusiasmo me han acompañado desde el principio, y los considero como mis bases fundamentales.`,
+    'hero.bio':
+      '+1 año de experiencia. A fines de 2022, en medio del crudo invierno finlandés, comencé este desafiante pero hermoso viaje, construyendo pequeñas aplicaciones con HTML, CSS y JavaScript. En pleno solsticio de verano, completé un bootcamp centrado en el desarrollo frontend, y después de unas semanas, comencé mi primera experiencia profesional.',
 
     'work.title': 'Experiencia Laboral',
     'work.work': 'Full-Stack Developer en Sitelicon Ecommerce Services',

@@ -50,7 +50,7 @@ const linkButtons = [
               </div>
             </div>
             <p class="text-gray-300 text-[1rem] text-center lg:text-start">
-              {project.description}
+              {lang === 'en' ? project.description_en : project.description_es}
             </p>
             <div class="flex flex-row gap-3 text-[1rem] justify-center lg:justify-start">
               {linkButtons.map((button) => {
