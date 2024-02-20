@@ -2,7 +2,7 @@ export const allProjects = [
   {
     id: 1,
     name: 'RecoFM',
-    img: '/portfolio/projects/RecoFM.png',
+    img: '/portfolio/projects/RecoFM.webp',
     description_en:
       'A place for Football Manager enthusiasts like me. Randomizer-style application. I used the Framer Motion library for page animations. For styles (pure CSS), BEM methodology was followed. Routing was implemented using React Router DOM.',
     description_es:
@@ -28,7 +28,7 @@ export const allProjects = [
   {
     id: 2,
     name: 'BookFinder',
-    img: '/portfolio/projects/bookfinder.png',
+    img: '/portfolio/projects/bookfinder.webp',
     description_en:
       'Given my passion for reading, I crafted this responsive SPA using React. It features registration and login functionalities. I employed hooks like useState, useEffect, useContext and useParams for functionality, and Axios for handling requests.',
     description_es:
@@ -53,7 +53,7 @@ export const allProjects = [
   {
     id: 3,
     name: 'DestinosAR',
-    img: '/portfolio/projects/DestinosAR.png',
+    img: '/portfolio/projects/DestinosAR.webp',
     description_en:
       'Tourism-focused SPA developed with Angular, featuring comprehensive CRUD operations, complete with user registration and login capabilities. It leverages guards, interceptors, switchMap, and reactive forms. Additionally, it employs pipes for data filtering.',
     description_es:
