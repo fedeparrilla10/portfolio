@@ -10,11 +10,6 @@ export const allTechs = [
     class: 'bg-blue-800 text-gray-100',
   },
   {
-    name: 'SASS',
-    img: '/portfolio/icons/sass.svg',
-    class: 'bg-pink-800 text-gray-100',
-  },
-  {
     name: 'JavaScript',
     img: '/portfolio/icons/javascript.svg',
     class: 'bg-yellow-300 text-gray-950',
@@ -53,6 +48,11 @@ export const allTechs = [
     name: 'Laravel',
     img: '/portfolio/icons/laravel.svg',
     class: 'bg-red-900 text-gray-100',
+  },
+  {
+    name: 'SASS',
+    img: '/portfolio/icons/sass.svg',
+    class: 'bg-pink-800 text-gray-100',
   },
   {
     name: 'MUI',
