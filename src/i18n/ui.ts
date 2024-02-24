@@ -17,7 +17,7 @@ export const ui = {
     'hero.hello': "Hello!👋🏻 I'm ",
     'hero.job': 'a Software Developer',
     'hero.bio':
-      '+1 year of experience. At the end of 2022, deep inside the Finnish winter, I began this challenging yet beautiful journey, building tiny applications with HTML, CSS, and JavaScript. By the peak of the summer solstice, I completed a frontend development-focused bootcamp, and after a few weeks, I started my first professional experience.',
+      '+1 year of experience. Specializing in front-end development, primarily using React, NextJS, and Astro. Commited to apply my skills and knowledge to deliver quality solutions, bringing enthusiasm, commitment and adaptability from day one. Currently at Sitelicon Ecommerce Services.',
 
     'work.title': 'Work Experience',
     'work.work': 'Full-Stack Developer in Sitelicon Ecommerce Services',
@@ -56,7 +56,7 @@ export const ui = {
     'hero.hello': '¡Hola!👋🏻 Soy ',
     'hero.job': 'un Desarrollador de Software',
     'hero.bio':
-      '+1 año de experiencia. A fines de 2022, en medio del crudo invierno finlandés, comencé este desafiante pero hermoso viaje, construyendo pequeñas aplicaciones con HTML, CSS y JavaScript. En pleno solsticio de verano, completé un bootcamp centrado en el desarrollo frontend, y después de unas semanas, comencé mi primera experiencia profesional.',
+      '+1 año de experiencia, especialmente en el desarrollo front-end, utilizando principalmente React, NextJS y Astro. Comprometido a aplicar mis conocimientos para entregar soluciones de calidad, aportando entusiasmo, compromiso y adaptabilidad desde el primer día. Actualmente en Sitelicon Ecommerce Services.',
 
     'work.title': 'Experiencia Laboral',
     'work.work': 'Full-Stack Developer en Sitelicon Ecommerce Services',
