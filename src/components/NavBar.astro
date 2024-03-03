@@ -1,4 +1,5 @@
 ---
+import Image from 'astro/components/Image.astro';
 import { languages } from '../i18n/ui';
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
 
@@ -44,10 +45,13 @@ const flags = [
 
 <section class="pt-2">
   <nav class="flex items-center justify-between">
-    <img
+    <Image
       src="/portfolio/fplogo.webp"
       class="h-6 w-6 object-contain"
       alt="FedeParrilla Logo"
+      width={24}
+      height={24}
+      loading="lazy"
     />
     <div class="flex flex-row gap-8">
       <ul
@@ -79,14 +83,16 @@ const flags = [
           Object.entries(languages).map(([lang, label]) => (
             <li>
               <a href={`/portfolio/${lang}`}>
-                <img
+                <Image
                   src={
                     flags.find(
                       (flag) => flag.name.toLowerCase() === label.toLowerCase()
                     ).src
                   }
                   alt={lang}
-                  class="h-8 w-6 object-contain"
+                  height={32}
+                  width={24}
+                  loading="lazy"
                 />
               </a>
             </li>
