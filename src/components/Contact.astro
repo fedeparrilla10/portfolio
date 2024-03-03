@@ -1,4 +1,5 @@
 ---
+import Image from 'astro/components/Image.astro';
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
@@ -7,17 +8,17 @@ const t = useTranslations(lang);
 const rrss = [
   {
     name: 'GitHub',
-    icon: 'fa-brands fa-github text-[2.5rem]',
+    src: '/portfolio/rrss/github.svg',
     link: 'https://github.com/fedeparrilla10',
   },
   {
     name: 'LinkedIn',
-    icon: 'fa-brands fa-linkedin text-[2.5rem]',
+    src: '/portfolio/rrss/linkedin.svg',
     link: 'https://www.linkedin.com/in/fedeparrilla/',
   },
   {
     name: 'Email',
-    icon: 'fa-solid fa-envelope text-[2.5rem]',
+    src: '/portfolio/rrss/email.svg',
     link: 'mailto:fedeparrilla.dev@gmail.com',
   },
 ];
@@ -38,7 +39,13 @@ const rrss = [
           return (
             <a href={rrss.link} target="_blank">
               <div class="flex flex-row items-center gap-2 text-[1rem]">
-                <i class={rrss.icon} />
+                <Image
+                  src={rrss.src}
+                  alt={rrss.name}
+                  width={32}
+                  height={32}
+                  loading="lazy"
+                />
                 <p>{rrss.name}</p>
               </div>
             </a>

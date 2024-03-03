@@ -1,4 +1,5 @@
 ---
+import Image from 'astro/components/Image.astro';
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
 import { allProjects } from '../data/projects.js';
 
@@ -8,11 +9,11 @@ const t = useTranslations(lang);
 const linkButtons = [
   {
     name: 'Preview',
-    icon: 'fa-solid fa-link',
+    src: '/portfolio/icons/link.svg',
   },
   {
     name: 'Code',
-    icon: 'fa-brands fa-github',
+    src: '/portfolio/icons/code.svg',
   },
 ];
 ---
@@ -62,7 +63,13 @@ const linkButtons = [
                     target="_blank"
                     class="flex flex-row items-center gap-2 rounded-xl px-3 py-2 bg-slate-900 hover:bg-slate-800"
                   >
-                    <i class={button.icon} />
+                    <Image
+                      src={button.src}
+                      alt={button.name}
+                      width={20}
+                      height={20}
+                      loading="lazy"
+                    />
                     <p>{button.name}</p>
                   </a>
                 );
