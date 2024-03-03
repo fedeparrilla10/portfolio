@@ -14,7 +14,9 @@ const t = useTranslations(lang);
     ⚒️ {t('skills.title')}
   </h2>
 
-  <div class="flex flex-row flex-wrap gap-4 justify-center lg:justify-start">
+  <article
+    class="flex flex-row flex-wrap gap-4 justify-center lg:justify-start"
+  >
     {
       allTechs.map((tech) => {
         return (
@@ -33,5 +35,5 @@ const t = useTranslations(lang);
         );
       })
     }
-  </div>
+  </article>
 </section>

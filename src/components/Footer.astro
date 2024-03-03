@@ -1,7 +1,17 @@
 ---
-
+import Image from 'astro/components/Image.astro';
 ---
 
-<section class="flex items-center justify-center mt-20 mb-3">
-  <h3 class="font-mono text-sm text-cyan-50">Fede Parrilla - 2024</h3>
-</section>
+<footer class="flex items-center justify-center mt-20 mb-3 gap-2">
+  <Image
+    src="/portfolio/icons/code.svg"
+    alt="Fede Parrilla"
+    width={20}
+    height={20}
+    loading="lazy"
+  />
+
+  <h3 class="font-mono text-sm text-cyan-50 font-semibold">
+    Fede Parrilla - 2024
+  </h3>
+</footer>

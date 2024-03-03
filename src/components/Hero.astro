@@ -9,7 +9,7 @@ const t = useTranslations(lang);
 const { cv, rrss } = externalLinks;
 ---
 
-<section
+<header
   class="flex justify-around flex-col py-10 mt-1 md:mt-10 gap-8 lg:gap-5"
   id="home"
 >
@@ -21,7 +21,7 @@ const { cv, rrss } = externalLinks;
     >, <br />{t('hero.job')}
   </h1>
 
-  <div class="flex flex-col justify-center items-center lg:flex-row gap-10">
+  <section class="flex flex-col justify-center items-center lg:flex-row gap-10">
     <div class="flex flex-col gap-6 items-center lg:items-start">
       <p>
         {t('hero.bio')}
@@ -57,5 +57,5 @@ const { cv, rrss } = externalLinks;
       height={256}
       class="rounded-full"
     />
-  </div>
-</section>
+  </section>
+</header>
