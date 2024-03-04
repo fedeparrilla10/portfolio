@@ -67,7 +67,9 @@ const flags = [
           class="bg-gradient-to-r from-cyan-300 to-cyan-500 text-gray-950 rounded-xl px-3 uppercase cursor-pointer font-semibold"
         >
           <a
-            href={lang === 'en' ? 'FedeParrillaENG.pdf' : 'FedeParrillaESP.pdf'}
+            href={lang === 'en'
+              ? '/FedeParrillaENG.pdf'
+              : '/FedeParrillaESP.pdf'}
             target="_blank"
           >
             {t('nav.cv')}
