@@ -33,12 +33,12 @@ const flags = [
   {
     id: 1,
     name: 'Español',
-    src: '/portfolio/spa.svg',
+    src: 'spa.svg',
   },
   {
     id: 2,
     name: 'English',
-    src: '/portfolio/eng.svg',
+    src: 'eng.svg',
   },
 ];
 ---
@@ -46,7 +46,7 @@ const flags = [
 <nav class="pt-2">
   <section class="flex items-center justify-between">
     <Image
-      src="/portfolio/fplogo.webp"
+      src="fplogo.webp"
       class="h-6 w-6 object-contain"
       alt="FedeParrilla Logo"
       width={24}
@@ -67,9 +67,7 @@ const flags = [
           class="bg-gradient-to-r from-cyan-300 to-cyan-500 text-gray-950 rounded-xl px-3 uppercase cursor-pointer font-semibold"
         >
           <a
-            href={lang === 'en'
-              ? '/portfolio/FedeParrillaENG.pdf'
-              : '/portfolio/FedeParrillaESP.pdf'}
+            href={lang === 'en' ? 'FedeParrillaENG.pdf' : 'FedeParrillaESP.pdf'}
             target="_blank"
           >
             {t('nav.cv')}
@@ -81,7 +79,7 @@ const flags = [
         {
           Object.entries(languages).map(([lang, label]) => (
             <li>
-              <a href={`/portfolio/${lang}`}>
+              <a href={`/${lang}`}>
                 <Image
                   src={
                     flags.find(
