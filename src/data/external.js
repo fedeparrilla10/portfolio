@@ -15,8 +15,8 @@ export const externalLinks = {
   cv: {
     name: 'CV',
     icon: '/rrss/resume.svg',
-    es: 'FedeParrillaES.pdf',
-    en: 'FedeParrillaEN.pdf',
+    es: '/FedeParrillaES.pdf',
+    en: '/FedeParrillaEN.pdf',
   },
 
   email: {
