@@ -2,7 +2,7 @@ export const allProjects = [
   {
     id: 1,
     name: 'RecoFM',
-    img: '/public/projects/RecoFM.webp',
+    img: '/projects/RecoFM.webp',
     description_en:
       'A place for Football Manager enthusiasts like me. Randomizer-style application. I used the Framer Motion library for page animations. For styles (pure CSS), BEM methodology was followed. Routing was implemented using React Router DOM.',
     description_es:
@@ -12,13 +12,13 @@ export const allProjects = [
       {
         id: 1,
         name: 'React',
-        img: '/public/icons/react.svg',
+        img: '/icons/react.svg',
         class: 'bg-cyan-950 text-gray-100',
       },
       {
         id: 2,
         name: 'CSS',
-        img: '/public/icons/css3.svg',
+        img: '/icons/css3.svg',
         class: 'bg-blue-800 text-gray-100',
       },
     ],
@@ -28,7 +28,7 @@ export const allProjects = [
   {
     id: 2,
     name: 'BookFinder',
-    img: '/public/projects/bookfinder.webp',
+    img: '/projects/bookfinder.webp',
     description_en:
       'Given my passion for reading, I crafted this responsive SPA using React. It features registration and login functionalities. I employed hooks like useState, useEffect, useContext and useParams for functionality, and Axios for handling requests.',
     description_es:
@@ -37,13 +37,13 @@ export const allProjects = [
       {
         id: 1,
         name: 'React',
-        img: '/public/icons/react.svg',
+        img: '/icons/react.svg',
         class: 'bg-cyan-950 text-gray-100',
       },
       {
         id: 2,
         name: 'CSS',
-        img: '/public/icons/css3.svg',
+        img: '/icons/css3.svg',
         class: 'bg-blue-800 text-gray-100',
       },
     ],
@@ -53,7 +53,7 @@ export const allProjects = [
   {
     id: 3,
     name: 'DestinosAR',
-    img: '/public/projects/DestinosAR.webp',
+    img: '/projects/DestinosAR.webp',
     description_en:
       'Tourism-focused SPA developed with Angular, featuring comprehensive CRUD operations, complete with user registration and login capabilities. It leverages guards, interceptors, switchMap, and reactive forms. Additionally, it employs pipes for data filtering.',
     description_es:
@@ -62,13 +62,13 @@ export const allProjects = [
       {
         id: 1,
         name: 'Angular',
-        img: '/public/icons/angular.svg',
+        img: '/icons/angular.svg',
         class: 'bg-red-950 text-gray-100',
       },
       {
         id: 2,
         name: 'SASS',
-        img: '/public/icons/sass.svg',
+        img: '/icons/sass.svg',
         class: 'bg-pink-800 text-gray-100',
       },
     ],
