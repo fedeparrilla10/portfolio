@@ -3,18 +3,18 @@ export const externalLinks = {
     {
       name: 'GitHub',
       link: 'https://github.com/fedeparrilla10',
-      icon: '/rrss/github.svg',
+      icon: '/public//rrss/github.svg',
     },
     {
       name: 'LinkedIn',
       link: 'https://www.linkedin.com/in/fedeparrilla/',
-      icon: '/rrss/linkedin.svg',
+      icon: '/public//rrss/linkedin.svg',
     },
   ],
 
   cv: {
     name: 'CV',
-    icon: '/rrss/resume.svg',
+    icon: '/public//rrss/resume.svg',
     es: 'FedeParrillaES.pdf',
     en: 'FedeParrillaEN.pdf',
   },
@@ -22,6 +22,6 @@ export const externalLinks = {
   email: {
     name: 'Email',
     link: 'mailto:fedeparrilla.dev@gmail.com',
-    icon: '/rrss/email.svg',
+    icon: '/public//rrss/email.svg',
   },
 };
