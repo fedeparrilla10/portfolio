@@ -17,7 +17,7 @@ export const ui = {
     'hero.hello': "Hello!👋🏻 I'm ",
     'hero.job': 'a Software Developer',
     'hero.bio':
-      '+1 year of experience. Specializing in front-end development, primarily using React, NextJS, and Astro. Commited to apply my skills and knowledge to deliver quality solutions, bringing enthusiasm, commitment and adaptability from day one. Currently at Sitelicon Ecommerce Services.',
+      '+1 year of experience, with a focus on front-end development, primarily using React, NextJS, and Astro. Commited to apply my skills and knowledge to deliver quality solutions, bringing enthusiasm, commitment and adaptability from day one. Currently at Sitelicon Ecommerce Services.',
 
     'work.title': 'Work Experience',
     'work.work': 'Full-Stack Developer in Sitelicon Ecommerce Services',
