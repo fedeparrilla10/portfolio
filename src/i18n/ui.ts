@@ -16,9 +16,9 @@ export const ui = {
 
     'hero.hello': "Hello!👋🏻 I'm ",
     'hero.job': 'a Software Developer',
+    'hero.experience': '+1 year of experience',
     'hero.bio':
-      '+1 year of experience, with a focus on front-end development, primarily using React, NextJS, and Astro. Commited to apply my skills and knowledge to deliver quality solutions, bringing enthusiasm, commitment and adaptability from day one. Currently at Sitelicon Ecommerce Services.',
-
+      'I specialize in front-end development, focusing primarily on React, NextJS, and Astro. I am fully committed to applying my skills to develop high-quality solutions, bringing enthusiasm, dedication, and adaptability from day one. Currently at Sitelicon Ecommerce Services.',
     'work.title': 'Work Experience',
     'work.work': 'Full-Stack Developer in Sitelicon Ecommerce Services',
     'work.date': 'August 2023 - Present',
@@ -55,10 +55,11 @@ export const ui = {
 
     'hero.hello': '¡Hola!👋🏻 Soy ',
     'hero.job': 'un Desarrollador de Software',
+    'hero.experience': '+1 año de experiencia',
     'hero.bio':
-      '+1 año de experiencia, especialmente en el desarrollo front-end, utilizando principalmente React, NextJS y Astro. Comprometido a aplicar mis conocimientos para entregar soluciones de calidad, aportando entusiasmo, compromiso y adaptabilidad desde el primer día. Actualmente en Sitelicon Ecommerce Services.',
+      'Especializado en el desarrollo front-end, enfocado principalmente en React, NextJS y Astro. Aportando entusiasmo, compromiso y adaptabilidad para entregar soluciones de calidad desde el primer día. Actualmente en Sitelicon Ecommerce Services.',
 
-    'work.title': 'Experiencia Laboral',
+    'work.title': 'Experiencia Profesional',
     'work.work': 'Full-Stack Developer en Sitelicon Ecommerce Services',
     'work.date': 'Agosto 2023 - Presente',
     'work.functions.first': `Desarrollo de soluciones front-end utilizando varios frameworks y tecnologías como React, NextJS o Astro, implementando componentes interactivos para mejorar la experiencia del usuario.`,
