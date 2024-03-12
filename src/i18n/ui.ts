@@ -18,7 +18,7 @@ export const ui = {
     'hero.job': 'a Software Developer',
     'hero.experience': '+1 year of experience',
     'hero.bio':
-      'I specialize in front-end development, focusing primarily on React, NextJS, and Astro. I am fully committed to applying my skills to develop high-quality solutions, bringing enthusiasm, dedication, and adaptability from day one. Currently at Sitelicon Ecommerce Services.',
+      'Specialized in front-end development, focusing primarily on React, NextJS and Astro. Completely committed to applying my skills for developing high-quality solutions, bringing enthusiasm, dedication, and adaptability from day one. Currently at Sitelicon Ecommerce Services.',
     'work.title': 'Work Experience',
     'work.work': 'Full-Stack Developer in Sitelicon Ecommerce Services',
     'work.date': 'August 2023 - Present',
@@ -57,7 +57,7 @@ export const ui = {
     'hero.job': 'un Desarrollador de Software',
     'hero.experience': '+1 año de experiencia',
     'hero.bio':
-      'Especializado en el desarrollo front-end, enfocado principalmente en React, NextJS y Astro. Aportando entusiasmo, compromiso y adaptabilidad para entregar soluciones de calidad desde el primer día. Actualmente en Sitelicon Ecommerce Services.',
+      'Especializado en el desarrollo front-end, enfocado principalmente en React, NextJS y Astro. Entusiasmo, compromiso y adaptabilidad para entregar soluciones de calidad desde el primer día. Actualmente en Sitelicon Ecommerce Services.',
 
     'work.title': 'Experiencia Profesional',
     'work.work': 'Full-Stack Developer en Sitelicon Ecommerce Services',
