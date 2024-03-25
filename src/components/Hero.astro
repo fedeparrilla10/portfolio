@@ -15,10 +15,9 @@ const { cv, rrss } = externalLinks;
 >
   <h1 class="font-bold text-2xl md:text-4xl text-center lg:text-left">
     {t('hero.hello')}
-    <span
-      class="bg-gradient-to-r from-cyan-300 to-cyan-100 text-transparent bg-clip-text tracking-wide"
-      >Fede Parrilla</span
-    >, <br />{t('hero.job')}
+    <span class="text-cyan-300 tracking-wide">Fede Parrilla</span>, <br />{
+      t('hero.job')
+    }
   </h1>
 
   <section class="flex flex-col justify-center items-center lg:flex-row gap-10">
@@ -35,7 +34,7 @@ const { cv, rrss } = externalLinks;
           rrss.map((rrss) => {
             return (
               <a href={rrss.link} target="_blank" aria-label={rrss.name}>
-                <Image src={rrss.icon} alt={rrss.name} width={48} height={48} />
+                <Image src={rrss.icon} alt={rrss.name} width={42} height={42} />
               </a>
             );
           })
@@ -45,7 +44,7 @@ const { cv, rrss } = externalLinks;
           target="_blank"
           aria-label={cv.name}
         >
-          <Image src={cv.icon} alt={cv.name} width={48} height={48} />
+          <Image src={cv.icon} alt={cv.name} width={42} height={42} />
         </a>
       </div>
     </div>
