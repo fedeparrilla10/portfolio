@@ -59,7 +59,9 @@ const flags = [
         {
           menuItems.map((item) => (
             <li>
-              <a href={item.link}>{item.name}</a>
+              <a href={item.link} class="hover:text-cyan-300">
+                {item.name}
+              </a>
             </li>
           ))
         }
