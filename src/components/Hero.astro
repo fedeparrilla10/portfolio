@@ -34,7 +34,13 @@ const { cv, rrss } = externalLinks;
           rrss.map((rrss) => {
             return (
               <a href={rrss.link} target="_blank" aria-label={rrss.name}>
-                <Image src={rrss.icon} alt={rrss.name} width={42} height={42} />
+                <Image
+                  src={rrss.icon}
+                  alt={rrss.name}
+                  width={42}
+                  height={42}
+                  loading="eager"
+                />
               </a>
             );
           })
@@ -60,6 +66,7 @@ const { cv, rrss } = externalLinks;
       width={256}
       height={256}
       class="rounded-full"
+      loading="eager"
     />
   </section>
 </header>
