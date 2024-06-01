@@ -44,7 +44,13 @@ const { cv, rrss } = externalLinks;
           target="_blank"
           aria-label={cv.name}
         >
-          <Image src={cv.icon} alt={cv.name} width={42} height={42} />
+          <Image
+            src={cv.icon}
+            alt={cv.name}
+            width={42}
+            height={42}
+            loading="eager"
+          />
         </a>
       </div>
     </div>
