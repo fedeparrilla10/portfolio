@@ -25,7 +25,7 @@ const linkButtons = [
     🚀 {t('projects.title')}
   </h2>
 
-  <article class="flex gap-24 flex-col justify-center">
+  <article class="flex gap-24 md:gap-20 flex-col justify-center">
     {
       allProjects.map((project) => (
         <div class="flex flex-col items-center lg:flex-row gap-4 lg:gap-10">
@@ -39,7 +39,7 @@ const linkButtons = [
           />
           <div class="flex flex-col gap-6 justify-around">
             <div class="flex flex-col gap-3 items-center lg:items-start">
-              <h3 class="text-2xl font-bold text-gray-200">{project.name}</h3>
+              <h3 class="text-2xl font-bold primaryColor">{project.name}</h3>
               <div class="flex flex-row gap-2 justify-center lg:justify-start">
                 {project.tech.map((tech) => {
                   return (
@@ -59,7 +59,7 @@ const linkButtons = [
                 })}
               </div>
             </div>
-            <p class="text-gray-300 text-[1rem] text-center lg:text-start">
+            <p class="primaryColor text-[1rem] text-center lg:text-start">
               {lang === 'en' ? project.description_en : project.description_es}
             </p>
             <div class="flex flex-row gap-3 text-[1rem] justify-center lg:justify-start">
@@ -70,7 +70,7 @@ const linkButtons = [
                       button.name === 'Preview' ? project.preview : project.code
                     }
                     target="_blank"
-                    class="flex flex-row items-center gap-2 rounded-xl px-3 py-2 bg-slate-900 md:transition md:duration-200 md:ease-in-out md:hover:bg-slate-800"
+                    class="flex flex-row items-center gap-2 rounded-xl px-3 py-[0.4rem] bg-slate-900 md:transition md:duration-200 md:ease-in-out md:hover:bg-slate-800"
                   >
                     <Image
                       src={button.src}

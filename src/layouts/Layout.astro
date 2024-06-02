@@ -6,6 +6,8 @@ import NavBar from '../components/NavBar.astro';
 
 const lang = getLangFromUrl(Astro.url);
 const { title } = Astro.props;
+
+const primaryColor = '#FFFFF0';
 ---
 
 <!doctype html>
@@ -29,14 +31,18 @@ const { title } = Astro.props;
     <ViewTransitions />
   </head>
   <body
-    class="mx-auto max-w-screen-lg px-5 font-main text-white bg-gradient-to-b from-gray-900 to-gray-950 xs:text-[16px] md:text-[18px]"
+    class="mx-auto max-w-screen-lg px-5 font-main primaryColor bg-gradient-to-b from-gray-900 to-gray-950 xs:text-[16px] md:text-[18px]"
   >
     <NavBar />
     <slot />
     <Footer />
-    <style is:global>
+    <style is:global define:vars={{ primaryColor }}>
       img {
         content-visibility: auto;
+      }
+
+      .primaryColor {
+        color: var(--primaryColor);
       }
     </style>
   </body>
