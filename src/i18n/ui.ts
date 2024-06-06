@@ -14,7 +14,9 @@ export const ui = {
     'nav.contact': 'Contact',
     'nav.cv': 'Download CV',
 
-    'hero.hello': "Hello!👋🏻 I'm ",
+    'hero.hello': 'Hello!',
+    'hero.wave': '👋🏻',
+    'hero.im': "I'm ",
     'hero.job': 'a Software Developer',
     'hero.experience': '+1 year of experience',
     'hero.bio':
@@ -53,7 +55,9 @@ export const ui = {
     'nav.contact': 'Contacto',
     'nav.cv': 'Descargar CV',
 
-    'hero.hello': '¡Hola!👋🏻 Soy ',
+    'hero.hello': '¡Hola!',
+    'hero.wave': '👋🏻',
+    'hero.im': 'Soy ',
     'hero.job': 'un Desarrollador de Software',
     'hero.experience': '+1 año de experiencia',
     'hero.bio':

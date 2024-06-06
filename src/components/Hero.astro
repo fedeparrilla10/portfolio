@@ -14,7 +14,8 @@ const { cv, rrss } = externalLinks;
   id="home"
 >
   <h1 class="font-bold text-2xl md:text-4xl text-center lg:text-left">
-    {t('hero.hello')}
+    {t('hero.hello')}<span class="waving-hand">{t('hero.wave')}</span>
+    {t('hero.im')}
     <span class="text-cyan-300 tracking-wide">Fede Parrilla</span>, <br />{
       t('hero.job')
     }
@@ -71,4 +72,41 @@ const { cv, rrss } = externalLinks;
       loading="eager"
     />
   </section>
+
+  <style>
+    .waving-hand {
+      animation-name: wave-animation;
+      animation-duration: 2.5s;
+      animation-iteration-count: infinite;
+      transform-origin: 70% 70%;
+      display: inline-block;
+    }
+
+    @keyframes wave-animation {
+      0% {
+        transform: rotate(0deg);
+      }
+      15% {
+        transform: rotate(14deg);
+      }
+      30% {
+        transform: rotate(-8deg);
+      }
+      40% {
+        transform: rotate(14deg);
+      }
+      50% {
+        transform: rotate(-4deg);
+      }
+      60% {
+        transform: rotate(10deg);
+      }
+      70% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+  </style>
 </header>
