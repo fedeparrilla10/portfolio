@@ -22,7 +22,7 @@ const { cv, rrss } = externalLinks;
 
   <section class="flex flex-col justify-center items-center lg:flex-row gap-10">
     <div class="flex flex-col gap-6 items-center lg:items-start">
-      <p>
+      <p class="text-md">
         <span class="font-semibold">{t('hero.experience')}</span>.
         {t('hero.bio')}
       </p>
@@ -37,9 +37,10 @@ const { cv, rrss } = externalLinks;
                 <Image
                   src={rrss.icon}
                   alt={rrss.name}
-                  width={42}
-                  height={42}
+                  width={48}
+                  height={48}
                   loading="eager"
+                  class="md:transition md:duration-300 md:ease-in-out md:hover:scale-110"
                 />
               </a>
             );
@@ -53,9 +54,10 @@ const { cv, rrss } = externalLinks;
           <Image
             src={cv.icon}
             alt={cv.name}
-            width={42}
-            height={42}
+            width={48}
+            height={48}
             loading="eager"
+            class="md:transition md:duration-300 md:ease-in-out md:hover:scale-110"
           />
         </a>
       </div>
