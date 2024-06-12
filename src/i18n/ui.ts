@@ -14,7 +14,7 @@ export const ui = {
     'nav.contact': 'Contact',
     'nav.cv': 'Download CV',
 
-    'hero.hello': 'Hello!',
+    'hero.hello': 'Hey!',
     'hero.wave': '👋🏻',
     'hero.im': "I'm ",
     'hero.job': 'a Software Developer',
