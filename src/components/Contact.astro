@@ -23,7 +23,7 @@ const { rrss, email } = externalLinks;
         rrss.map((rrss) => {
           return (
             <a href={rrss.link} target="_blank">
-              <div class="flex flex-row items-center gap-2 text-[1rem]">
+              <div class="flex flex-row items-center gap-2 text-[1rem] md:transition md:duration-300 md:ease-in-out md:hover:scale-110">
                 <Image
                   src={rrss.icon}
                   alt={rrss.name}
@@ -40,7 +40,7 @@ const { rrss, email } = externalLinks;
       {
         (
           <a href={email.link} target="_blank">
-            <div class="flex flex-row items-center gap-2 text-[1rem]">
+            <div class="flex flex-row items-center gap-2 text-[1rem] md:transition md:duration-300 md:ease-in-out md:hover:scale-110">
               <Image
                 src={email.icon}
                 alt={email.name}

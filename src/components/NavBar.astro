@@ -55,7 +55,7 @@ const flags = [
 
     <div class="flex flex-row gap-8">
       <ul
-        class="hidden md:flex flex-row items-center justify-center gap-8 md:gap-5 text-[0.95rem] font-mono uppercase text-cyan-100"
+        class="hidden md:flex flex-row items-center justify-center gap-8 md:gap-5 text-sm uppercase text-cyan-100"
       >
         {
           menuItems.map((item) => (
@@ -67,7 +67,7 @@ const flags = [
           ))
         }
         <li
-          class="bg-gradient-to-r from-cyan-300 to-cyan-500 text-gray-950 rounded-xl px-2 uppercase cursor-pointer font-bold"
+          class="bg-gradient-to-r from-cyan-300 to-cyan-500 text-gray-950 rounded-xl px-2 uppercase cursor-pointer font-bold md:transition md:duration-300 md:ease-in-out md:hover:scale-105"
         >
           <a
             href={lang === 'en'
@@ -94,6 +94,7 @@ const flags = [
                   alt={lang}
                   height={32}
                   width={24}
+                  class="md:transition md:duration-300 md:ease-in-out md:hover:scale-110"
                 />
               </a>
             </li>
