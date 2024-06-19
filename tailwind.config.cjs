@@ -11,4 +11,5 @@ module.exports = {
       mono: ['Roboto Mono', 'monospace'],
     },
   },
+  plugins: [require('tailwindcss-animated')],
 };
