@@ -14,11 +14,14 @@ const { cv, rrss } = externalLinks;
   id="home"
 >
   <h1
-    class="font-bold text-2xl md:text-4xl text-center lg:text-left animate-fade-up animate-duration-[2000ms]"
+    class="font-bold text-2xl md:text-4xl text-center lg:text-left animate-fade-up animate-duration-[1500ms]"
   >
     {t('hero.hello')}<span class="waving-hand">{t('hero.wave')}</span>
     {t('hero.im')}
-    <span class="text-cyan-300">Fede Parrilla</span>, <br />{t('hero.job')}
+    <span
+      class="bg-gradient-to-r from-[#3ADFED] via-[#46ECD6] to-[#B9FA8E] inline-block text-transparent bg-clip-text"
+      >Fede Parrilla</span
+    >, <br />{t('hero.job')}
   </h1>
 
   <section class="flex flex-col justify-center items-center lg:flex-row gap-12">
@@ -41,7 +44,7 @@ const { cv, rrss } = externalLinks;
                   width={48}
                   height={48}
                   loading="eager"
-                  class="md:transition md:duration-300 md:ease-in-out md:hover:scale-110 md:animate-fade-down md:animate-duration-[1500ms]"
+                  class="md:transition md:duration-300 md:ease-in-out md:hover:scale-110"
                 />
               </a>
             );
@@ -58,7 +61,7 @@ const { cv, rrss } = externalLinks;
             width={48}
             height={48}
             loading="eager"
-            class="md:transition md:duration-300 md:ease-in-out md:hover:scale-110 md:animate-fade-down md:animate-duration-[1500ms]"
+            class="md:transition md:duration-300 md:ease-in-out md:hover:scale-110"
           />
         </a>
       </div>
@@ -72,41 +75,41 @@ const { cv, rrss } = externalLinks;
       loading="eager"
     />
   </section>
-
-  <style>
-    .waving-hand {
-      animation-name: wave-animation;
-      animation-duration: 2.5s;
-      animation-iteration-count: infinite;
-      transform-origin: 70% 70%;
-      display: inline-block;
-    }
-
-    @keyframes wave-animation {
-      0% {
-        transform: rotate(0deg);
-      }
-      15% {
-        transform: rotate(14deg);
-      }
-      30% {
-        transform: rotate(-8deg);
-      }
-      40% {
-        transform: rotate(14deg);
-      }
-      50% {
-        transform: rotate(-4deg);
-      }
-      60% {
-        transform: rotate(10deg);
-      }
-      70% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(0deg);
-      }
-    }
-  </style>
 </header>
+
+<style>
+  .waving-hand {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+  }
+
+  @keyframes wave-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    15% {
+      transform: rotate(14deg);
+    }
+    30% {
+      transform: rotate(-8deg);
+    }
+    40% {
+      transform: rotate(14deg);
+    }
+    50% {
+      transform: rotate(-4deg);
+    }
+    60% {
+      transform: rotate(10deg);
+    }
+    70% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+</style>

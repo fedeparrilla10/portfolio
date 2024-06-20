@@ -2,6 +2,7 @@
 import Image from 'astro/components/Image.astro';
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
 import { allProjects } from '../data/projects.js';
+import ProjectsIcon from '../../public/icons/startup.webp';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -19,11 +20,14 @@ const linkButtons = [
 ---
 
 <section class="pt-10 mb-10 flex flex-col gap-12" id="projects">
-  <h2
-    class="font-mono font-semibold text-xl text-cyan-200 text-center lg:text-start"
-  >
-    🚀 {t('projects.title')}
-  </h2>
+  <div class="flex items-center gap-4">
+    <Image src={ProjectsIcon} alt={t('projects.title')} class="w-8 h-8" />
+    <h2
+      class="font-semibold text-xl text-cyan-200 text-center lg:text-start pb-2"
+    >
+      {t('projects.title')}
+    </h2>
+  </div>
 
   <article class="flex gap-24 md:gap-20 flex-col justify-center">
     {

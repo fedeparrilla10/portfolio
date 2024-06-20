@@ -2,17 +2,19 @@
 import Image from 'astro/components/Image.astro';
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
 import { allTechs } from '../data/stack.js';
+import SkillsIcon from '../../public/icons/pencil.webp';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
 <section class="pt-10 mb-10 flex flex-col gap-12" id="skills">
-  <h2
-    class="font-mono font-semibold text-xl text-cyan-200 text-center lg:text-start"
-  >
-    ⚒️ {t('skills.title')}
-  </h2>
+  <div class="flex items-center gap-4">
+    <Image src={SkillsIcon} alt={t('skills.title')} class="w-8 h-8" />
+    <h2 class="font-semibold text-xl text-cyan-200 text-center lg:text-start">
+      {t('skills.title')}
+    </h2>
+  </div>
 
   <article
     class="flex flex-row flex-wrap gap-4 justify-center lg:justify-start"
