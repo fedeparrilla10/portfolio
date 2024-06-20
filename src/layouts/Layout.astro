@@ -8,6 +8,7 @@ const lang = getLangFromUrl(Astro.url);
 const { title } = Astro.props;
 
 const primaryColor = '#FFFFF0';
+const sectionTitleColor = '#71F9CE';
 ---
 
 <!doctype html>
@@ -36,13 +37,17 @@ const primaryColor = '#FFFFF0';
     <NavBar />
     <slot />
     <Footer />
-    <style is:global define:vars={{ primaryColor }}>
+    <style is:global define:vars={{ primaryColor, sectionTitleColor }}>
       img {
         content-visibility: auto;
       }
 
       .primaryColor {
         color: var(--primaryColor);
+      }
+
+      .sectionTitleColor {
+        color: var(--sectionTitleColor);
       }
     </style>
   </body>
