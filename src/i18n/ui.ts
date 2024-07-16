@@ -73,7 +73,7 @@ export const ui = {
     'work.functions.third': `Me encargué del desarrollo de diferentes secciones para PACOMARTÍNEZ, un destacado minorista de productos relacionados con viajes. Trabajé en la creación de paneles de administración intuitivos e interfaces de usuario.`,
     'work.functions.fourth': `Colaboré en la creación de API RESTful utilizando Laravel (PHP). Contribuí activamente al proceso de desarrollo mediante la creación de puntos finales y la gestión eficaz de datos.`,
     'work.functions.fifth': `Realicé mejoras en el rendimiento de sitios web en varios proyectos al ampliar el conocimiento en técnicas de optimización y mejores prácticas, lo que resultó en tiempos de carga más rápidos y una mayor participación de los usuarios.`,
-    'work.functions.sixth': `Participé en proyectos de renovación de diseño para páginas web, aprovechando la experiencia en UX/UI para crear interfaces más amigables y visualmente atractivas.`,
+    'work.functions.sixth': `Participé en proyectos de renovación de diseño para páginas web, aprovechando mi experiencia previamente adquirida en UX/UI para crear interfaces más amigables y visualmente atractivas.`,
 
     'study.date': 'Octubre 2022 - Julio 2023',
     'study.title': 'Front-End Development Bootcamp en UpgradeHub',
