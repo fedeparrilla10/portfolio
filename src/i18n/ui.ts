@@ -28,6 +28,8 @@ export const ui = {
     'work.functions.second': `Designed and crafted multiple landing pages for Nacon, a renowned mark in the entertainment industry, ensuring timely delivery and efficient development by creating a custom template.`,
     'work.functions.third': `Led the development of distinct sections for PACOMARTÍNEZ, a prominent travel-related products retailer. Played a key role in creating both intuitive admin panels and user interfaces.`,
     'work.functions.fourth': `Collaborated in the creation of robust RESTful APIs using Laravel (PHP). Actively contributed to the development process by creating endpoints and managing data effectively.`,
+    'work.functions.fifth': `Improved website performance across multiple projects by expanding my knowledge of optimization techniques and best practices, resulting in faster load times and better user engagement.`,
+    'work.functions.sixth': `Assisted in website redesign projects, applying growing experience in UX/UI to create more user-friendly and visually appealing interfaces.`,
 
     'study.date': 'October 2022 - July 2023',
     'study.title': 'Front-End Development Bootcamp in UpgradeHub',
@@ -70,6 +72,8 @@ export const ui = {
     'work.functions.second': `Encabecé el desarrollo de múltiples landings para Nacon, una marca reconocida en la industria del entretenimiento, asegurando la entrega oportuna y un desarrollo eficiente mediante la creación de una plantilla personalizada.`,
     'work.functions.third': `Me encargué del desarrollo de diferentes secciones para PACOMARTÍNEZ, un destacado minorista de productos relacionados con viajes. Trabajé en la creación de paneles de administración intuitivos e interfaces de usuario.`,
     'work.functions.fourth': `Colaboré en la creación de API RESTful utilizando Laravel (PHP). Contribuí activamente al proceso de desarrollo mediante la creación de puntos finales y la gestión eficaz de datos.`,
+    'work.functions.fifth': `Realicé mejoras en el rendimiento de sitios web en varios proyectos al ampliar el conocimiento en técnicas de optimización y mejores prácticas, lo que resultó en tiempos de carga más rápidos y una mayor participación de los usuarios.`,
+    'work.functions.sixth': `Participé en proyectos de renovación de diseño para páginas web, aprovechando la creciente experiencia en UX/UI para crear interfaces más amigables y visualmente atractivas.`,
 
     'study.date': 'Octubre 2022 - Julio 2023',
     'study.title': 'Front-End Development Bootcamp en UpgradeHub',
