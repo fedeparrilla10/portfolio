@@ -28,7 +28,7 @@ export const ui = {
     'work.functions.second': `Designed and crafted multiple landing pages for Nacon, a renowned mark in the entertainment industry, ensuring timely delivery and efficient development by creating a custom template.`,
     'work.functions.third': `Led the development of distinct sections for PACOMARTÍNEZ, a prominent travel-related products retailer. Played a key role in creating both intuitive admin panels and user interfaces.`,
     'work.functions.fourth': `Collaborated in the creation of robust RESTful APIs using Laravel (PHP). Actively contributed to the development process by creating endpoints and managing data effectively.`,
-    'work.functions.fifth': `Improved website performance across multiple projects by expanding my knowledge of optimization techniques and best practices, resulting in faster load times and better user engagement.`,
+    'work.functions.fifth': `Improved website performance across multiple projects by using Lighthouse, expanding knowledge in optimization techniques and best practices, resulting in faster load times and better user engagement.`,
     'work.functions.sixth': `Assisted in website redesign projects, applying growing experience in UX/UI to create more user-friendly and visually appealing interfaces.`,
 
     'study.date': 'October 2022 - July 2023',
