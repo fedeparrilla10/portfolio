@@ -40,6 +40,16 @@ export const allTechs = [
     class: 'bg-red-950 text-gray-100',
   },
   {
+    name: 'NodeJS',
+    img: '/icons/nodejs.svg',
+    class: 'bg-green-950 text-gray-100',
+  },
+  {
+    name: 'Express',
+    img: '/icons/express.svg',
+    class: 'bg-blue-900 text-gray-100',
+  },
+  {
     name: 'PHP',
     img: '/icons/php.svg',
     class: 'bg-blue-950 text-gray-100',

@@ -26,18 +26,20 @@ const { rrss, email } = externalLinks;
       {
         rrss.map((rrss) => {
           return (
-            <a href={rrss.link} target="_blank">
-              <div class="flex flex-row items-center gap-2 text-[1rem] md:transition md:duration-300 md:ease-in-out md:hover:scale-110">
-                <Image
-                  src={rrss.icon}
-                  alt={rrss.name}
-                  width={32}
-                  height={32}
-                  loading="lazy"
-                />
-                <p>{rrss.name}</p>
-              </div>
-            </a>
+            rrss.name !== 'GitHub' && (
+              <a href={rrss.link} target="_blank">
+                <div class="flex flex-row items-center gap-2 text-[1rem] md:transition md:duration-300 md:ease-in-out md:hover:scale-110">
+                  <Image
+                    src={rrss.icon}
+                    alt={rrss.name}
+                    width={32}
+                    height={32}
+                    loading="lazy"
+                  />
+                  <p>{rrss.name}</p>
+                </div>
+              </a>
+            )
           );
         })
       }
