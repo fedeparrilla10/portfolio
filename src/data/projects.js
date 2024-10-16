@@ -3,6 +3,7 @@ export const allProjects = [
     id: 1,
     name: 'RecoFM',
     img: '/projects/RecoFM.webp',
+    icon: '/icons/ball.svg',
     description_en:
       'A place for Football Manager enthusiasts like me. Randomizer-style application. I used the Framer Motion library for page animations. For styles (pure CSS), BEM methodology was followed. Routing was implemented using React Router DOM.',
     description_es:
@@ -29,6 +30,7 @@ export const allProjects = [
     id: 2,
     name: 'BookFinder',
     img: '/projects/bookfinder.webp',
+    icon: '/icons/book.svg',
     description_en:
       'Given my passion for reading, I crafted this responsive SPA using React. It features registration and login functionalities. I employed hooks like useState, useEffect, useContext and useParams for functionality, and Axios for handling requests.',
     description_es:
@@ -49,30 +51,5 @@ export const allProjects = [
     ],
     preview: 'https://fedeparrilla10.github.io/bookfinder/',
     code: 'https://github.com/fedeparrilla10/bookfinder',
-  },
-  {
-    id: 3,
-    name: 'DestinosAR',
-    img: '/projects/DestinosAR.webp',
-    description_en:
-      'Tourism-focused SPA developed with Angular, featuring comprehensive CRUD operations, complete with user registration and login capabilities. It leverages guards, interceptors, switchMap, and reactive forms. Additionally, it employs pipes for data filtering.',
-    description_es:
-      'SPA orientada al turismo en Argentina desarrollada con Angular, con un CRUD completo que incluye funciones de registro e inicio de sesión de usuarios. Utiliza guards, interceptors, switchMap y formularios reactivos. Además, emplea pipes para el filtrado de datos.',
-    tech: [
-      {
-        id: 1,
-        name: 'Angular',
-        img: '/icons/angular.svg',
-        class: 'bg-red-950 text-gray-100',
-      },
-      {
-        id: 2,
-        name: 'SASS',
-        img: '/icons/sass.svg',
-        class: 'bg-pink-800 text-gray-100',
-      },
-    ],
-    preview: 'https://fedeparrilla10.github.io/destinosar/',
-    code: 'https://github.com/fedeparrilla10/destinosar',
   },
 ];

@@ -1,7 +1,7 @@
 ---
 import Image from 'astro/components/Image.astro';
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
-import WorkExperienceIcon from '../../public/icons/briefcase.webp';
+import WorkExperienceIcon from '../../public/icons/workexp.svg';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -9,7 +9,11 @@ const t = useTranslations(lang);
 
 <section class="pt-8 mb-10 flex flex-col gap-12" id="work-experience">
   <div class="flex items-center gap-4">
-    <Image src={WorkExperienceIcon} alt={t('work.title')} class="w-8 h-8" />
+    <Image
+      src={WorkExperienceIcon}
+      alt={t('work.title')}
+      class="pt-1 w-[1.6rem]"
+    />
     <h2
       class="font-semibold text-xl sectionTitleColor text-center lg:text-start pt-1"
     >

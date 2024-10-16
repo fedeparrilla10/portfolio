@@ -2,7 +2,7 @@
 import Image from 'astro/components/Image.astro';
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
 import { allProjects } from '../data/projects.js';
-import ProjectsIcon from '../../public/icons/startup.webp';
+import ProjectsIcon from '../../public/icons/rocket.svg';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -29,74 +29,130 @@ const linkButtons = [
     </h2>
   </div>
 
-  <article class="flex gap-24 md:gap-20 flex-col justify-center">
+  <article class="flex gap-3 flex-wrap">
     {
       allProjects.map((project) => (
         <>
-          <div class="flex flex-col items-center lg:flex-row gap-4 lg:gap-10">
-            <Image
-              class="rounded-3xl lg:w-full lg:h-60 object-cover object-left-top md:transition md:duration-300 md:ease-in-out md:hover:scale-105"
-              src={project.img}
-              alt={project.name}
-              height={400}
-              width={400}
-              loading="lazy"
-            />
-            <div class="flex flex-col gap-6 justify-around">
-              <div class="flex flex-col gap-3 items-center lg:items-start">
-                <h3 class="text-xl font-bold primaryColor">{project.name}</h3>
-                <div class="flex flex-row gap-2 justify-center lg:justify-start">
-                  {project.tech.map((tech) => {
-                    return (
-                      <div
-                        class={`${tech.class} flex flex-row text-sm items-center gap-1 border-gray-200 rounded-lg px-3 py-[0.20rem] cursor-default`}
-                      >
-                        <Image
-                          src={tech.img}
-                          alt={tech.name}
-                          width={20}
-                          height={20}
-                          loading="lazy"
-                        />
-                        <p>{tech.name}</p>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-              <p class="primaryColor text-[1rem] text-center lg:text-start">
-                {lang === 'en'
-                  ? project.description_en
-                  : project.description_es}
-              </p>
-              <div class="flex flex-row gap-3 text-[1rem] justify-center lg:justify-start">
-                {linkButtons.map((button) => {
-                  return (
-                    <a
-                      href={
-                        button.name === 'Preview'
-                          ? project.preview
-                          : project.code
-                      }
-                      target="_blank"
-                      class="flex flex-row items-center gap-2 rounded-xl px-3 py-[0.4rem] bg-slate-900 md:transition md:duration-200 md:ease-in-out md:hover:bg-slate-800"
-                    >
-                      <Image
-                        src={button.src}
-                        alt={button.name}
-                        width={20}
-                        height={20}
-                        loading="lazy"
-                      />
-                      <p>{button.name}</p>
-                    </a>
-                  );
-                })}
-              </div>
+          <div class="max-w-[27rem] whitespace-normal break-words rounded-lg primaryColor bg-transparent px-4 font-sans text-sm font-normal text-blue-gray-500 shadow-lg shadow-blue-gray-500/10 focus:outline-none">
+            <div class="mb-2 flex items-center gap-3">
+              <a
+                href={project.preview}
+                class="block font-sans text-base font-medium leading-relaxed tracking-normal antialiased transition-colors hover:text-[#71F9CE]"
+                target="_blank"
+              >
+                {project.name}
+              </a>
+              <Image
+                src={project.icon}
+                alt={project.name}
+                width={20}
+                height={20}
+              />
+            </div>
+            <p class="block font-sans text-sm font-normal leading-normal antialiased">
+              {lang === 'en' ? project.description_en : project.description_es}
+            </p>
+            <div class="mt-4 flex items-center gap-2">
+              {project.tech.map((tech) => {
+                return (
+                  <div
+                    class={`${tech.class} flex items-center gap-1 py-0.5 px-3 rounded-lg`}
+                  >
+                    <Image
+                      src={tech.img}
+                      alt={tech.name}
+                      width={20}
+                      height={20}
+                      loading="lazy"
+                    />
+                    <p>{tech.name}</p>
+                  </div>
+                );
+              })}
+              {linkButtons.map((button) => {
+                return (
+                  <a
+                    href={
+                      button.name === 'Preview' ? project.preview : project.code
+                    }
+                    target="_blank"
+                    class="flex flex-row items-center gap-1 py-1 px-3 rounded-lg bg-slate-900 md:transition md:duration-200 md:ease-in-out md:hover:bg-slate-800"
+                  >
+                    <Image
+                      src={button.src}
+                      alt={button.name}
+                      width={20}
+                      height={20}
+                      loading="lazy"
+                    />
+                    <p>{button.name}</p>
+                  </a>
+                );
+              })}
             </div>
           </div>
         </>
       ))
     }
+
+    <!-- {
+      allProjects.map((project) => {
+        <>
+          <div class="max-w-[26rem] whitespace-normal break-words rounded-lg border border-blue-gray-50 text-gray-950 bg-white p-4 font-sans text-sm font-normal text-blue-gray-500 shadow-lg shadow-blue-gray-500/10 focus:outline-none">
+            <div class="mb-2 flex items-center gap-3">
+              <a
+                href="#"
+                class="block font-sans text-base font-medium leading-relaxed tracking-normal antialiased transition-colors hover:text-pink-500"
+              >
+                {project.name}
+              </a>
+              <div class="center relative inline-block select-none whitespace-nowrap rounded-full bg-purple-500 py-1 px-2 align-baseline font-sans text-xs font-medium capitalize leading-none tracking-wide text-white">
+                <div class="mt-px">Public</div>
+              </div>
+            </div>
+            <p class="block font-sans text-sm font-normal leading-normal text-gray-700 antialiased">
+              {lang === 'en' ? project.description_en : project.description_es}
+            </p>
+            <div class="mt-4 flex items-center gap-5">
+              {project.tech.map((tech) => {
+                return (
+                  <div class={`${tech.class} flexitems-center gap-1`}>
+                    <Image
+                      src={tech.img}
+                      alt={tech.name}
+                      width={20}
+                      height={20}
+                      loading="lazy"
+                    />
+                    <p>{tech.name}</p>
+                  </div>
+                );
+              })}
+              {linkButtons.map((button) => {
+                return (
+                  <a
+                    href={
+                      button.name === 'Preview' ? project.preview : project.code
+                    }
+                    target="_blank"
+                    class="flex flex-row items-center gap-2 rounded-xl px-3 py-[0.4rem] bg-slate-900 md:transition md:duration-200 md:ease-in-out md:hover:bg-slate-800"
+                  >
+                    <Image
+                      src={button.src}
+                      alt={button.name}
+                      width={20}
+                      height={20}
+                      loading="lazy"
+                    />
+                    <p>{button.name}</p>
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+          ;
+        </>;
+      })
+    } -->
   </article>
 </section>

@@ -70,7 +70,7 @@ export const allTechs = [
     class: 'bg-blue-950 text-gray-100',
   },
   {
-    name: 'TailwindCSS',
+    name: 'Tailwind',
     img: '/icons/tailwind.svg',
     class: 'bg-blue-700 text-gray-100',
   },

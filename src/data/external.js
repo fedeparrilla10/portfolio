@@ -10,18 +10,17 @@ export const externalLinks = {
       link: 'https://www.linkedin.com/in/fedeparrilla/',
       icon: '/rrss/linkedin.svg',
     },
+    {
+      name: 'Contact',
+      link: 'mailto:fedeparrilla.dev@gmail.com',
+      icon: '/rrss/email.svg',
+    },
   ],
 
   cv: {
     name: 'CV',
-    icon: '/rrss/resume.svg',
+    icon: '/rrss/bresume.svg',
     es: '/FedeParrillaES.pdf',
     en: '/FedeParrillaEN.pdf',
-  },
-
-  email: {
-    name: 'Email',
-    link: 'mailto:fedeparrilla.dev@gmail.com',
-    icon: '/rrss/email.svg',
   },
 };

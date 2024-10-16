@@ -2,6 +2,7 @@
 import Image from 'astro/components/Image.astro';
 import { languages } from '../i18n/ui';
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { Astronav, MenuItems, MenuIcon } from 'astro-navbar';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -43,59 +44,94 @@ const flags = [
 ];
 ---
 
-<nav class="pt-4 md:pt-2 md:sticky top-0 z-10 flex items-center justify-center">
-  <section class="flex items-center justify-center">
-    <div class="flex flex-row gap-8">
-      <ul
-        class="hidden md:flex flex-row items-center justify-center gap-8 md:gap-5 text-sm uppercase text-cyan-100"
-      >
-        {
-          menuItems.map((item) => (
-            <li>
-              <a href={item.link} class="hover:text-cyan-300">
-                {item.name}
-              </a>
-            </li>
-          ))
-        }
-        <li
-          class="bg-gradient-to-r from-[#5CF2E9] via-[#71F9CE] to-[#98FCAD] text-gray-950 rounded-xl px-2 uppercase cursor-pointer font-bold md:transition md:duration-300 md:ease-in-out md:hover:scale-105"
-        >
-          <a
-            href={lang === 'en'
-              ? '/FedeParrillaENG.pdf'
-              : '/FedeParrillaESP.pdf'}
-            target="_blank"
+<Astronav closeOnClick>
+  <nav
+    class="pt-4 md:pt-2 md:sticky top-0 z-10 flex items-center justify-center"
+  >
+    <section class="flex items-center justify-center">
+      <div class="flex flex-col lg:flex-row items-center justify-center gap-8">
+        <div class="block lg:hidden">
+          <MenuIcon class="w-5 h-5 text-[primaryColor]" />
+        </div>
+        <MenuItems class="hidden w-full lg:w-auto lg:flex lg:mt-0">
+          <ul
+            class="flex flex-col lg:flex-row items-center justify-center gap-5 text-md lg:text-sm uppercase text-cyan-100"
           >
-            {t('nav.cv')}
-          </a>
-        </li>
-      </ul>
-
-      <ul class="flex flex-row items-center justify-center gap-3">
-        {
-          Object.entries(languages).map(([lang, label]) => (
-            <li>
-              <a href={`/${lang}`}>
-                <Image
-                  src={
-                    flags.find(
-                      (flag) => flag.name.toLowerCase() === label.toLowerCase()
-                    ).src
-                  }
-                  alt={lang}
-                  height={32}
-                  width={24}
-                  class="md:transition md:duration-300 md:ease-in-out md:hover:scale-110"
-                />
+            {
+              menuItems.map((item) => (
+                <li>
+                  <a href={item.link} class="hover:text-cyan-300">
+                    {item.name}
+                  </a>
+                </li>
+              ))
+            }
+            <li
+              class="bg-gradient-to-r from-[#5CF2E9] via-[#71F9CE] to-[#98FCAD] text-gray-950 rounded-xl px-2 uppercase cursor-pointer font-bold md:transition md:duration-300 md:ease-in-out md:hover:scale-105"
+            >
+              <a
+                href={lang === 'en'
+                  ? '/FedeParrillaENG.pdf'
+                  : '/FedeParrillaESP.pdf'}
+                target="_blank"
+              >
+                {t('nav.cv')}
               </a>
             </li>
-          ))
-        }
-      </ul>
-    </div>
-  </section>
-</nav>
+          </ul>
+
+          <ul
+            class="flex lg:hidden flex-row items-center justify-center gap-3 pt-4"
+          >
+            {
+              Object.entries(languages).map(([lang, label]) => (
+                <li>
+                  <a href={`/${lang}`}>
+                    <Image
+                      src={
+                        flags.find(
+                          (flag) =>
+                            flag.name.toLowerCase() === label.toLowerCase()
+                        ).src
+                      }
+                      alt={lang}
+                      height={32}
+                      width={24}
+                      class="md:transition md:duration-300 md:ease-in-out md:hover:scale-110"
+                    />
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </MenuItems>
+
+        <ul class="hidden lg:flex flex-row items-center justify-center gap-3">
+          {
+            Object.entries(languages).map(([lang, label]) => (
+              <li>
+                <a href={`/${lang}`}>
+                  <Image
+                    src={
+                      flags.find(
+                        (flag) =>
+                          flag.name.toLowerCase() === label.toLowerCase()
+                      ).src
+                    }
+                    alt={lang}
+                    height={32}
+                    width={24}
+                    class="md:transition md:duration-300 md:ease-in-out md:hover:scale-110"
+                  />
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </section>
+  </nav>
+</Astronav>
 
 <style>
   section {

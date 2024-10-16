@@ -7,7 +7,7 @@ import NavBar from '../components/NavBar.astro';
 const lang = getLangFromUrl(Astro.url);
 const { title } = Astro.props;
 
-const primaryColor = '#FFFFF0';
+const primaryColor = '#FAFAFA';
 const sectionTitleColor = '#71F9CE';
 ---
 
@@ -32,13 +32,17 @@ const sectionTitleColor = '#71F9CE';
     <ViewTransitions />
   </head>
   <body
-    class="mx-auto max-w-screen-lg px-5 font-main primaryColor bg-gray-950 bg-[radial-gradient(ellipse_90%_80%_at_50%_-20%,rgba(120,119,198,0.2),rgba(255,255,255,0))] xs:text-[16px] md:text-[18px]"
+    class="mx-auto maxW px-4 lg:px-2 font-main primaryColor bg-gradient-to-b from-gray-900 to-gray-950 xs:text-[16px] md:text-[18px]"
     id="home"
   >
     <NavBar />
     <slot />
     <Footer />
     <style is:global define:vars={{ primaryColor, sectionTitleColor }}>
+      .maxW {
+        max-width: 900px;
+      }
+
       img {
         content-visibility: auto;
       }
