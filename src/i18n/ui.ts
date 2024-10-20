@@ -20,13 +20,13 @@ export const ui = {
     'hero.job': 'a Software Developer',
     'hero.experience': '+1 year(s) of experience',
     'hero.bio':
-      'Specialized in front-end development, focusing primarily on React, NextJS and Astro. Completely committed to applying my skills for developing high-quality solutions, bringing enthusiasm, dedication, and adaptability from day one. Currently at Sitelicon Ecommerce Services.',
+      'Specialized in web development, focusing on React, Next.js, Astro and Laravel. Committed to applying my skills to develop high-quality solutions while bringing enthusiasm, dedication, and adaptability from day one. Currently at Sitelicon Ecommerce Services.',
     'work.title': 'Work Experience',
     'work.work': 'Full-Stack Developer in Sitelicon Ecommerce Services',
     'work.date': 'August 2023 - Present',
     'work.functions.first': `Developed frontend solutions using various frameworks and technologies, such as React, NextJS or Astro, implementing interactive components to improve user experiences.`,
-    'work.functions.second': `Designed and crafted multiple landing pages for Nacon, a renowned mark in the entertainment industry, ensuring timely delivery and efficient development by creating a custom template.`,
-    'work.functions.third': `Led the development of distinct sections for PACOMARTÍNEZ, a prominent travel-related products retailer. Played a key role in creating both intuitive admin panels and user interfaces.`,
+    'work.functions.second': `Crafted multiple landing pages for a renowned mark in the entertainment industry, ensuring timely delivery and efficient development by creating a reusable template.`,
+    'work.functions.third': `Established distinct sections for a prominent travel-related products retailer, focusing on ERP panels and user interfaces, while using AWS for efficient content management.`,
     'work.functions.fourth': `Worked with robust RESTful APIs using Laravel (PHP), contributing to backend areas by creating endpoints, designing tables, and setting up relationships to manage data efficiently and smoothly.`,
     'work.functions.fifth': `Improved website performance across multiple projects by expanding my knowledge
 of optimization techniques and best practices.`,

@@ -24,10 +24,6 @@ const menuItems = [
     name: t('nav.skills'),
     link: '#skills',
   },
-  // {
-  //   name: t('nav.contact'),
-  //   link: '#contact',
-  // },
 ];
 
 const flags = [
@@ -79,34 +75,9 @@ const flags = [
               </a>
             </li>
           </ul>
-
-          <ul
-            class="flex lg:hidden flex-row items-center justify-center gap-3 pt-4"
-          >
-            {
-              Object.entries(languages).map(([lang, label]) => (
-                <li>
-                  <a href={`/${lang}`}>
-                    <Image
-                      src={
-                        flags.find(
-                          (flag) =>
-                            flag.name.toLowerCase() === label.toLowerCase()
-                        ).src
-                      }
-                      alt={lang}
-                      height={32}
-                      width={24}
-                      class="md:transition md:duration-300 md:ease-in-out md:hover:scale-110"
-                    />
-                  </a>
-                </li>
-              ))
-            }
-          </ul>
         </MenuItems>
 
-        <ul class="hidden lg:flex flex-row items-center justify-center gap-3">
+        <!-- <ul class="hidden lg:flex flex-row items-center justify-center gap-3">
           {
             Object.entries(languages).map(([lang, label]) => (
               <li>
@@ -127,7 +98,7 @@ const flags = [
               </li>
             ))
           }
-        </ul>
+        </ul> -->
       </div>
     </section>
   </nav>

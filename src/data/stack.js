@@ -60,6 +60,16 @@ export const allTechs = [
     class: 'bg-red-900 text-gray-100',
   },
   {
+    name: 'AWS',
+    img: '/icons/aws.svg',
+    class: 'bg-orange-600 text-gray-100',
+  },
+  {
+    name: 'MySQL',
+    img: '/icons/mysql.svg',
+    class: 'bg-blue-800 text-gray-100',
+  },
+  {
     name: 'SASS',
     img: '/icons/sass.svg',
     class: 'bg-pink-800 text-gray-100',
